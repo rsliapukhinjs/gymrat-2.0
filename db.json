@@ -1,0 +1,22 @@
+{
+  "entries": [
+    {
+      "id": "1",
+      "date": "2024-21-01",
+      "title": "Chest day",
+      "note": "Today I will do bench press"
+    },
+    {
+      "id": "2",
+      "date": "2024-26-01",
+      "title": "Back day",
+      "note": "What are you guys doing today?"
+    },
+    {
+      "id": "3",
+      "date": "2024-31-01",
+      "title": "Legs",
+      "note": "Most underrated muscle group"
+    }
+  ]
+}
