@@ -1,6 +1,4 @@
-import React from "react";
-
-const Card = ({ entry }) => {
+const Card = ({ entry, onDelete }) => {
   return (
     <article className="bg-red-100 p-4 flex flex-col gap-4 drop-shadow-md rounded">
       <span className="text-sm">{entry.date}</span>
@@ -8,9 +6,12 @@ const Card = ({ entry }) => {
         <h3 className="text-lg">{entry.title}</h3>
         <p>{entry.note}</p>
       </div>
-      <a href="#" className="self-end hover:underline text-sm">
-        More
-      </a>
+      <button
+        className="block px-2 py-1 bg-red-500 hover:bg-red-600 text-slate-100 rounded self-end text-xs"
+        onClick={() => onDelete(entry.id)}
+      >
+        Delete
+      </button>
     </article>
   );
 };
