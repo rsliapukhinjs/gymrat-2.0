@@ -30,7 +30,7 @@ const App = () => {
 
     const duplicates = entries.filter((entry) => entry.date === newEntry.date);
 
-    if (duplicates) {
+    if (duplicates.length > 0) {
       const confirm = window.confirm(
         "There is already session with this date. Do you want to replace it?"
       );
